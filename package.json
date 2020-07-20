@@ -1,0 +1,25 @@
+{
+  "name": "ward-me-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass" : "nodemon -e scss -x  node-sass styles/scss -o styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoborini/ward-me-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugoborini/ward-me-form/issues"
+  },
+  "homepage": "https://github.com/hugoborini/ward-me-form#readme"
+}
