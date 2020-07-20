@@ -23,7 +23,7 @@ $app->setBasePath("/ward-me-form");
 // Route - page d'accueil
 $app->get('/', function (Request $request, Response $response) {
     $response->getBody();
-    echo 'hello';
+    include 'view/form.php';
     return $response;
 });
 
