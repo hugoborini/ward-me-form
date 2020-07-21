@@ -1,4 +1,6 @@
-
+a{
+    text-decoration: none;
+}
 
 body {
     background: #F0F4F5;
@@ -41,9 +43,6 @@ header{
         font-family: 'Poppins', sans-serif;
         margin-bottom: 20px;
         font-size: 20px;
-      .option{
-          color: red;
-      }
    
     }
     &__input:focus{
@@ -68,7 +67,28 @@ header{
         font-family: 'Poppins', sans-serif;
         margin-bottom: 20px;
         font-size: 20px;
+        background-color: white;
         color: #9398A0;
+    }
+
+    &__container{
+        height: 64px;
+        width: 40vw;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        .form__double{
+            flex-basis: 48%;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            background-color: white;
+            color: #9398A0;
+            
+        }
+        .form__double:focus{
+            outline: none;
+        }
     }
 }
 
@@ -82,4 +102,78 @@ header{
     letter-spacing: 3px;
     color: white;
     margin-top: 10px;
+}
+
+.popup{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    height: 50vh;
+    width: 50vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    z-index: 1;
+
+    .first-part{
+        flex-basis: 50%;
+        .header{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            img{
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+        }
+        .logo-container{
+            display: flex;
+            justify-content: center;
+            .circle{
+                width: 100px;
+                height: 100px;
+                background: #7DBAAC;
+                border-radius: 50%;
+            }
+        }
+        .text_sucess{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 60px;
+        }
+        .subtext_sucess{
+            font-size: 15px;
+            font-weight: 100;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .bottom-popup{
+        flex-basis: 50%;
+        background-color: #7DBAAC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .link{
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #576170;
+            color: white;
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+        }
+    }
+}
+
+.close{
+    display: none; 
 }

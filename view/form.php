@@ -9,11 +9,21 @@
 <body>
     <header>
         <h1>Ward me form</h1>
-        <p>lorem ipsum</p>
+        <p>Formulaire warde me</p>
     </header>
 
+    <?php
+    if (isset($_GET['sucess']) && $_GET['sucess'] == 1){
+        include "component/popup.php";
+    }
+    ?>
+
     <div class="form">
-        <form action="" method='post'>
+        <form action="send" method='post'>
+            <div class="form__container">
+                <input class="form__double" type="text" name="name" placeholder="Votre nom">
+                <input class="form__double" type="text" name="lastname" placeholder="Votre prenom">
+            </div>
             <input class="form__input" type="number" name="age" placeholder="Votre Age">
             
             <input class="form__input" type="text" name="location" placeholder="Où habitez vous">
@@ -68,5 +78,6 @@
 
         </form>
     </div>
+    <script src="javascript/app.js"></script>
 </body>
 </html>
