@@ -33,6 +33,12 @@ $app->post('/send', function (Request $request, Response $response){
     return $response;
 });
 
+$app->get('/idc', function (Request $request, Response $response) {
+    $response->getBody();
+    include 'view/ptimalin.php';
+    return $response;
+});
+
 
 // Démarrage de l'application
 $app->run();
