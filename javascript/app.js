@@ -9,10 +9,8 @@ let $secure_hour = document.querySelector("#recreate-hour");
 console.log($gameChoice);
 console.log($hourGame);
 
-if($form[1].value === "non"){
-    $gameChoice.remove();
-    $hourGame.remove();
-}
+console.log("uiop");
+
 
 if ($close){
     $close.addEventListener("click", ()=>{
@@ -43,7 +41,7 @@ for (let i = 0; i < $form.length; i++){
             } else {
                     let input_gamechoice = document.createElement("div");
                     input_gamechoice.innerHTML = `<select class='form__select game_choice' id="game" name="type_game" required>
-                    <option class="option" value="front">A quelle type de jeux jouez-vous</option>
+                    <option class="option" value="">A quelle type de jeux jouez-vous</option>
                     <option class="option" value="FPS">FPS</option>
                     <option class="option" value="MOBA">MOBA</option>
                     <option class="option" value="TPS">TPS</option>

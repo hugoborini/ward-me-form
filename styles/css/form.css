@@ -24,6 +24,14 @@ header {
   .form form {
     display: flex;
     flex-direction: column; }
+  .form__condition {
+    display: flex; }
+    .form__condition label {
+      font-family: 'Poppins', sans-serif;
+      margin-left: 10px; }
+      .form__condition label a {
+        color: #629df5;
+        text-decoration: underline; }
   .form .small {
     font-size: 13px; }
   .form__input {

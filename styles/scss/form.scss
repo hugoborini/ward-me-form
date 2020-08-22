@@ -31,8 +31,21 @@ header{
     form{
         display: flex;
         flex-direction: column;
+        
     }
 
+    &__condition{
+        display: flex;
+        
+        label{
+            font-family: 'Poppins', sans-serif;
+            margin-left: 10px;
+            a{
+                color: rgb(98, 157, 245);
+                text-decoration: underline;
+            }
+        }
+    }
     .small{
         font-size: 13px;
     }

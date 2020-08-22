@@ -75,6 +75,11 @@
              <div id="recreate-hour"></div>
             <input class="form__input small hour_game" type="number" name="hour" placeholder="En moyenne, combien d'heures jouez-vous par semaine aux jeux vidéo (mobile inclus)" required>
             
+            <div class="form__condition">
+                <input type="checkbox" id="condition" name="check"  required>
+                <label for="condition">J'ai lu et j'accepte les <a href="condition"> Conditions Générales</a> de WARD ME</label>
+            </div>
+
             <input class="input__submit" type="submit">
 
         </form>

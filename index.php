@@ -39,6 +39,12 @@ $app->get('/idc', function (Request $request, Response $response) {
     return $response;
 });
 
+$app->get('/condition', function (Request $request, Response $response) {
+    $response->getBody();
+    include 'view/condition.php';
+    return $response;
+});
+
 
 // Démarrage de l'application
 $app->run();
