@@ -12,7 +12,7 @@
                     <p>SUPER !</p>
                 </div>
                 <div class="subtext_sucess">
-                    <p>vos info ont ete envoyer a warde me</p>
+                    <p>Vos infos ont été envoyées à WARDE ME</p>
                 </div>
         </div>
                 <div class="bottom-popup">
