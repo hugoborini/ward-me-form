@@ -16,6 +16,8 @@
     if (isset($_GET['sucess']) && $_GET['sucess'] == 1){
         include "component/popup.php";
     }
+
+    include "component/conditionPopup.php";
     ?>
 
     <div class="form">
@@ -50,7 +52,8 @@
                 <option class="option" value="Sans Emploi" required>Sans Emploi</option>
                 <option class="option" value="Artisans, commerçants, chef d'entreprise" required>Artisans, commerçants, chef d'entreprise</option>
                 <option class="option" value="Agriculteur" required>Agriculteur</option>
-                <option class="option" value="Retraité" required>Retraité </option>
+                <option class="option" value="Retraité" required>Retraité</option>
+                <option class="option" value="Étudiant" required>Étudiant</option>
 
             </select>
             
@@ -77,7 +80,7 @@
             
             <div class="form__condition">
                 <input type="checkbox" id="condition" name="check"  required>
-                <label for="condition">J'ai lu et j'accepte les <a href="condition"> Conditions Générales</a> de WARD ME</label>
+                <label for="condition">J'ai lu et j'accepte les <span class="clickcable"> Conditions Générales</span> de WARD ME</label>
             </div>
 
             <input class="input__submit" type="submit">

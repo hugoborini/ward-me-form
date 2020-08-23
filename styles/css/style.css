@@ -26,6 +26,7 @@ header {
     color: #9398A0; }
 
 .form {
+  transform: filter 0.5s;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -35,6 +36,10 @@ header {
     flex-direction: column; }
   .form__condition {
     display: flex; }
+    .form__condition .clickcable {
+      color: #629df5;
+      text-decoration: underline;
+      cursor: pointer; }
     .form__condition label {
       font-family: 'Poppins', sans-serif;
       margin-left: 10px; }
@@ -158,3 +163,35 @@ header {
 
 .close {
   display: none; }
+
+.condition-popup {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  width: 50vw;
+  height: 50vh; }
+  .condition-popup__header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; }
+    .condition-popup__header img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      margin-top: 10px;
+      cursor: pointer; }
+  .condition-popup__body {
+    height: 80%;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center; }
+    .condition-popup__body p {
+      width: 90%; }
+
+.darker {
+  filter: blur(4px); }

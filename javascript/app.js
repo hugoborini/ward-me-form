@@ -3,28 +3,39 @@ let $popup = document.querySelector(".popup");
 let $form = document.querySelectorAll(".ecoute");
 let $gameChoice = document.querySelector(".game_choice");
 let $hourGame = document.querySelector(".hour_game");
+let $allForm = document.querySelector(".form");
 let $forms = document.querySelector("#form");
 let $secure_game = document.querySelector("#recreate-game");
 let $secure_hour = document.querySelector("#recreate-hour");
-console.log($gameChoice);
-console.log($hourGame);
+let $condition = document.querySelector(".clickcable");
+let $conditionPopup = document.querySelector(".condition-popup");
 
-console.log("uiop");
+console.log($condition);
+
 
 
 if ($close){
     $close.addEventListener("click", ()=>{
-    $popup.className = "close"
+    if ($popup){
+        $popup.className = "close"
+    }
+    if($conditionPopup){
+        $conditionPopup.style.display = "none"
+        $allForm.classList.remove("darker");
+    }
 })
 }
 
 
-console.log($form);
+$condition.addEventListener("click", ()=>{
+    console.log("click");
+    $close = document.querySelector("#close")
+    $conditionPopup.style.display = "block";
+    $allForm.classList.add("darker");
+    console.log($close);
 
-
-console.log($forms);
-
-
+    
+});
 for (let i = 0; i < $form.length; i++){
     $form[i].addEventListener("click", ()=>{
         if ($form[i].value === "non"){
